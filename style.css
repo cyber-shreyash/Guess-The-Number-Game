@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8EB8E5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.box {
+    margin: 80px auto;
+    width: 100%;
+    max-width: 750px;
+    border: 9px solid black;
+    background-color: #dfa78a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.enter {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#placeholder {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#placeholder input {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 3.5px solid black;
+    background-color: #C9CAD9;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#b1, #b2 {
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 140px;
+    text-align: center;
+}
+
+#b1 {
+    background-color: #95c2c9;
+}
+#b2 {
+    background-color: #a0cbd1;
+}
+
+#result {
+    margin-top: 60px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    #heading {
+        text-decoration: none;
+        font-size: 1.4rem;
+        margin-top: 30px;
+    }
+    .enter {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    #placeholder input {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .box{
+        margin-top: 45px;
+    }
+    .button {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #b1, #b2 {
+        width: 90%;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    #result {
+        font-size: 1rem;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+}
